@@ -1,0 +1,113 @@
+:root {
+    --m3-primary: #0061a4;
+    --m3-subtitle: #21809a;
+    --m3-alert: #b9f4e9;
+    --m3-surface: #f7f9ff;
+    --m3-terciary: #e5e7f1;
+    --m3-container: #ffffff;
+    --m3-secondary-container: #dfe2eb;
+    --m3-accent: #001d36;
+    --radius-m3: 20px;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.title-color {
+    color: var(--m3-primary);
+}
+
+.subtitle-color {
+    color: var(--m3-subtitle);
+}
+
+.navbar {
+    background-color: var(--m3-surface);
+    top: 0;
+    z-index: 1;
+
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 10px 20px !important;
+    transition: ease-in-out all 0.3s;
+
+
+    &:hover {
+        background-color: var(--m3-secondary-container);
+        border-radius: var(--radius-m3);
+        color: var(--m3-primary);
+    }
+}
+
+.hero-hybrid {
+    background: linear-gradient(180deg, #d1e4ff 0%, #f7f9ff 100%);
+    padding: 80px 0;
+    border-radius: 0 0 50px 50px;
+    color: var(--m3-accent);
+    box-shadow: 0 4px 6px #f7f9ff;
+
+}
+
+
+
+.menu-lat {
+    position: sticky;
+    top: 5%;
+    border-radius: 20px;
+}
+
+
+section {
+    padding: 10px 0;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light-custom {
+    background-color: #f8f9fa;
+}
+
+.notion-light {
+    background-color: var(--m3-terciary);
+    margin: 5px;
+    border-radius: var(--radius-m3);
+}
+
+.notion-alert {
+    background-color: var(--m3-alert);
+    margin: 5px;
+    border-radius: var(--radius-m3);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.sticky-top {
+    top: 20px;
+}
+
+.border-left-primary {
+    border-left: 5px solid var(--m3-subtitle);
+    padding-left: 20px;
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        position: sticky;
+    }
+}

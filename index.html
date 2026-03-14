@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Usabilidad y DCU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@10.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#usabilidad">Nociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#accesibilidad">Accesibilidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ingenieria">Ingeniería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dcu">DCU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#referencias">Bibliografía</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-hybrid text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Usabilidad y UX/UI</h1>
+            <p class="lead">By Brayan Andrey Cuevas Reina</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <aside class="col-md-3 d-none d-md-block">
+                <div class="list-group shadow-sm menu-lat">
+                    <a href="#usabilidad" class="list-group-item list-group-item-action">Usabilidad Básica</a>
+                    <a href="#accesibilidad" class="list-group-item list-group-item-action">Usabilidad vs Accesibilidad</a>
+                    <a href="#ingenieria" class="list-group-item list-group-item-action">Ingeniería de Usabilidad</a>
+                    <a href="#metodos" class="list-group-item list-group-item-action">Métodos de Evaluación</a>
+                    <a href="#dcu" class="list-group-item list-group-item-action">Diseño Centrado en el Usuario</a>
+                    <a href="#referencias" class="list-group-item list-group-item-action">Referencias</a>
+                </div>
+            </aside>
+
+            <div class="col-md-9">
+                
+                <section id="usabilidad" class="mb-5">
+                    <h2 class="fw-bold title-color">Usabilidad: Nociones Básicas</h2>
+                    <p>A lo largo de la historia se han dado diversas formas de interpretar lo que es o podría significar la usabilidad, podría decirse que es una forma de medir o evaluar como interactúa el usuario con una aplicación teniendo en cuenta la <strong>eficacia, eficiencia y satisfacción</strong>.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <div class="p-3 notion-light">
+                                <h5 class="title-color">Facilidad de Aprendizaje</h5>
+                                <p class="small">¿Qué tan fácil es para los usuarios realizar tareas básicas la primera vez?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 notion-light">
+                                <h5 class="title-color">Eficiencia</h5>
+                                <p class="small">Una vez aprendido, ¿qué tan rápido realizan las tareas?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 notion-light">
+                                <h5 class="title-color">Prevención de Errores</h5>
+                                <p class="small">¿Cuántos errores cometen y qué tan fácil es recuperarse?</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="accesibilidad" class="my-5">
+                    <h2 class="fw-bold title-color">Usabilidad y Accesibilidad</h2>
+                    <p>Aunque a menudo se confunden, son conceptos complementarios:</p>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title subtitle-color">Accesibilidad</h5>
+                            <p class="card-text">Se centra en que <strong>nadie quede excluido</strong>. Asegura que personas con discapacidades (visuales, motoras, cognitivas) puedan acceder a la información.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title subtitle-color">Usabilidad</h5>
+                            <p class="card-text">Se centra en la <strong>calidad de la experiencia</strong> de aquellos que ya pueden acceder al sistema.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="ingenieria" class="my-5">
+                    <h2 class="fw-bold title-color">Ingeniería de Usabilidad</h2>
+                    <p>Es el enfoque estructurado y basado en procesos para asegurar que los sistemas sean fáciles de usar. No es "hacerlo bonito", es aplicar métodos científicos para garantizar la funcionalidad.</p>
+                    
+                    <div id="ciclo" class="mt-4 p-4 notion-light border-left-primary">
+                        <h4>Ciclo de Vida de la Ingeniería</h4>
+                        <ol>
+                            <li><strong>Análisis de Requisitos:</strong> Entender al usuario y sus tareas.</li>
+                            <li><strong>Diseño y Prototipado:</strong> Creación de modelos de baja y alta fidelidad.</li>
+                            <li><strong>Evaluación:</strong> Pruebas continuas para detectar cuellos de botella.</li>
+                            <li><strong>Instalación:</strong> Retroalimentación tras el lanzamiento real.</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="metodos" class="my-5">
+                    <h2 class="fw-bold title-color">Métodos de Evaluación de Usabilidad</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover mt-3">
+                            <thead>
+                                <tr>
+                                    <th>Método</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Evaluación Heurística</strong></td>
+                                    <td>Expertos comparan la interfaz contra 10 principios establecidos (Nielsen).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Test con Usuarios</strong></td>
+                                    <td>Observación directa de usuarios reales realizando tareas específicas.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Recorrido Cognitivo</strong></td>
+                                    <td>Simulación del proceso mental del usuario para aprender un sistema.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="dcu" class="my-5">
+                    <h2 class="fw-bold title-color">Diseño Web Centrado en el Usuario (DCU)</h2>
+                    <p>Es un enfoque o proceso iterativo en el que los diseñadores se centran en los usuarios y sus necesidades a lo largo de todas las fases del proyecto. En lugar de obligar a las personas a adaptarse a una herramienta o sistema, el sistema se adapta a ellos.</p>
+                    <div class="alert notion-alert">
+                        <strong>Principio Clave:</strong> No diseñes para ti, diseña para la persona que usará el producto. El usuario es el centro de todas las decisiones técnicas y estéticas.
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="referencias" class="my-5">
+                    <h3 class="fw-bold title-color">Referencias Bibliográficas</h3>
+                    <ul class="list-unstyled">
+                        <li>📚 Nielsen, J. (1994). <em>Usability Engineering</em>. Morgan Kaufmann.</li>
+                        <li>📚 Krug, S. (2014). <em>Don't Make Me Think: A Common Sense Approach to Web Usability</em>. New Riders.</li>
+                        <li>📚 Norman, D. (2013). <em>The Design of Everyday Things</em>. Basic Books.</li>
+                        <li>📚 ISO 9241-11:2018. <em>Ergonomics of human-system interaction — Usability</em>.</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+    </main>
+<!-- 
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>© 2026 - Guía de Usabilidad para Profesionales de la Información</p>
+    </footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
